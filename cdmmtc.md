@@ -1,3 +1,3 @@
 layout: page
 title: "CDMMTC"
-permalink: /cdmmtc
+permalink: /projects/cdmmtc/index.html
