@@ -132,7 +132,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Mingqi Jiang</a>,</span>
+                <a href="https://mingqij.github.io/" target="_blank">Mingqi Jiang</a>,</span>
                 <span class="author-block">
                   <a href="https://chkim403.github.io" target="_blank">Chanho Kim</a>,</span>
                 <span class="author-block">
@@ -248,7 +248,7 @@
         <div class="content has-text-justified">
           <img src="static/images/main_figure.png" alt="MY ALT TEXT"/>
           <p>
-          Overview of the GS4 SLAM System.  
+          <strong>Overview of the SLAM System.</strong> At each timestep, the system receives an RGB-D frame as input. The tracking system performs local camera tracking and global localization to determine the current frame's pose and correct previous pose errors. Our 3D mapping process comprises three main components: <strong>1) Gaussian Prediction (Sec 3.2.1):</strong> Utilizing the current frame's RGB-D data, the Gaussian Prediction Model estimates the parameters and semantic labels for all Gaussians in the current frame; <strong>2) Gaussian Refinement (Sec 3.2.2):</strong> Both newly added Gaussians and those in the existing semantic 3D map are refined using the Gaussian Refinement Network to ensure that the combined set of Gaussians accurately represents the scene.  A covisibility check ensures that only non-overlapping Gaussians are integrated into the existing 3D map. Post-refinement, the transparent Gaussians are pruned; <strong>3) One-Iteration Gaussian Optimization (Sec 3.3.2):</strong> If significant pose corrections happen, a one-iteration Gaussian optimization is performed to update the 3D map's Gaussians, ensuring consistency with the revised camera poses. (Best viewed in color)
         </p>
         </div>
       </div>
@@ -264,25 +264,19 @@
     <div class="container is-max-desktop content">
 
       <h2 class="title is-3">Rendering Performance</h2>
+     <strong>GS4</strong> demonstrates superior performance on high-quality RGB-D datasets. On the challenging ScanNet dataset, our method achieves state-of-the-art results, outperforming previous approaches with a <strong>14.6%</strong> improvement in rendering quality (PSNR) over the runner-up Point-SLAM, and a <strong>23.2%</strong> improvement in semantic rendering accuracy (mIoU) over the runner-up SGS-SLAM.
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="./static/videos/scene0169.mp4"
-                type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="90%">
-            <!-- Your video file here -->
-            <source src="./static/videos/test.mp4"
+            <source src="./static/videos/scene0000.mp4"
                 type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="90%">\
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
             <!-- Your video file here -->
-            <source src="./static/videos/test.mp4"
+            <source src="./static/videos/scene0169.mp4"
                 type="video/mp4">
           </video>
         </div>
